@@ -1,0 +1,15 @@
+/*联系我们样式*/
+
+@import url("public/reset.css");
+@import url("public/header.css");
+@import url("public/footer.css");
+@import url("public/aside.css");
+.main .map{
+	margin-top: 50px;
+	margin-left: 40px;
+}
+.main .article p{
+	font-size: 16px;
+	text-indent: 30px;
+	color: #333;
+}

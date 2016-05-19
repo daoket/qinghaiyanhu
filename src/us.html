@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+		<title>
+
+			联系我们 - 青海高端盐湖科技有限公司
+
+		</title>
+
+		<meta name="author" content="一个努力奋斗的前端工程师" />
+		<meta name="keywords" content="青海高端盐湖科技有限公司,青海高端盐湖,高端盐湖科技" />
+		<meta name="description" content="青海高端盐湖是一个大型钾盐生产企业，位于柴达木盆地察尔汗盐湖的东台，南依昆仑，北临祁连。湖区面积300多平方公里，蕴藏着十分丰富自然资源，以钾、锂、镁为主。伴有硼、溴、碘、铯、铷等稀有元素，美丽的吉乃尔盐湖就在这里。" />
+		<link rel="stylesheet" type="text/css" href="css/flag.css" />
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<!--[if lt IE 8]>
+		<p class="browsehappy">
+			你正在使用一个<strong>过时</strong>的浏览器。请<a class="link" href="http://browsehappy.com" target="_blank">升级你的浏览器</a>以查看网页。</p>
+		</p>
+		<![endif]-->
+
+		<!--BaiduMap javascript-->
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=http://api.map.baidu.com/api?v=2.0&ak=m0aUPMYm2n45WjVyhhQRBZZB" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!-- head start -->
+		<div class="header">
+			<div class="header-nav clearfix">
+				<h1><a href="#">青海高端盐湖科技有限公司</a></h1>
+				<div class="tel fr">
+					<i class="fl"></i>
+					<div class="fr">
+						<p>咨询电话</p>
+						<em>0979-8463599</em>
+					</div>
+				</div>
+				<div class="nav fr">
+					<ul>
+						<li><a class="nav-active" href="index.html">首页</a></li>
+						<li><a href="about.html">关于我们</a></li>
+						<li><a href="news.html">新闻中心</a></li>
+						<li><a href="product.html">产品中心</a></li>
+						<li><a href="flag.html">旗下企业</a></li>
+						<li><a href="message.html">在线留言</a></li>
+						<li><a href="us.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- head end -->
+
+		<!-- main start -->
+		<div class="bg-banner">
+			<img src="img/us/ny_banner_us.jpg" />
+		</div>
+		<div class="main">
+			<div class="aside">
+				<img src="img/us/us-aside.png" />
+				<ol id="aside-list">
+					<li><a href="#">联系我们</a></li>
+				</ol>
+				<div class="connection">
+					<h2>联系我们<span><img src="img/public/conncetion.png"/></span></h2>
+					<div class="tel">
+						<p>了解更多详细信息，请致电</p>
+						<span>0979-8463599</span>
+					</div>
+					<div class="message">
+						<span>或给我们留言</span>
+						<br />
+						<a href="#">在线留言</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="title ">
+					<div class="title-header">
+						<h2><i></i>联系我们</h2>
+						<p><i></i><a class="linkMe" href="index.html">首页</a>&gt;<a href="flag.html">联系我们</a></p>
+					</div>
+				</div>
+				<div class="article" style="margin-top: -100px;">
+					<div style="width:831px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer
+================================================== -->
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-left">
+					<img src="img/home/ft_logo.png" />
+					<div class="footer-list">
+						<h2>青海高端盐湖科技有限公司</h2>
+						<p>公司地址：青海省格尔木市柴达木西路14号</p>
+						<p>Email：qhgdyh@126.com</p>
+						<p>传真：0979-8467858 邮编：816000</p>
+						<strong> <i></i>0979-8463599</strong>
+					</div>
+				</div>
+				<div class="footer-right">
+					<img src="img/home/erweima.png" />
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-last">
+					<div class="hover">
+						<div class="footer-link">友情链接
+							<ul>
+								<li><a href="#">济南大地美术</a></li>
+								<li><a href="#">白鹤拳酒厂</a></li>
+								<li><a href="#">青年帮创意工坊</a></li>
+							</ul>
+						</div>
+					</div>
+					<span>青海高端盐湖科技有限公司    青ICP备05001178号</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- BaiduMap core JavaScript
+================================================== -->
+		<script type="text/javascript">
+			//创建和初始化地图函数：
+			function initMap() {
+				createMap(); //创建地图
+				setMapEvent(); //设置地图事件
+				addMapControl(); //向地图添加控件
+				addMapOverlay(); //向地图添加覆盖物
+			}
+
+			function createMap() {
+				map = new BMap.Map("map");
+				map.centerAndZoom(new BMap.Point(94.896436, 36.405256), 18);
+			}
+
+			function setMapEvent() {
+				map.enableScrollWheelZoom();
+				map.enableKeyboard();
+				map.enableDragging();
+				map.enableDoubleClickZoom()
+			}
+
+			function addClickHandler(target, window) {
+				target.addEventListener("click", function() {
+					target.openInfoWindow(window);
+				});
+			}
+
+			function addMapOverlay() {
+				var markers = [{
+					content: "我的备注",
+					title: "青海高端盐湖科技",
+					imageOffset: {
+						width: 0,
+						height: 3
+					},
+					position: {
+						lat: 36.405307,
+						lng: 94.896113
+					}
+				}];
+				for (var index = 0; index < markers.length; index++) {
+					var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+					var marker = new BMap.Marker(point, {
+						icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+							imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+						})
+					});
+					var label = new BMap.Label(markers[index].title, {
+						offset: new BMap.Size(25, 5)
+					});
+					var opts = {
+						width: 200,
+						title: markers[index].title,
+						enableMessage: false
+					};
+					var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+					marker.setLabel(label);
+					addClickHandler(marker, infoWindow);
+					map.addOverlay(marker);
+				};
+			}
+			//向地图添加控件
+			function addMapControl() {
+				var scaleControl = new BMap.ScaleControl({
+					anchor: BMAP_ANCHOR_BOTTOM_LEFT
+				});
+				scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+				map.addControl(scaleControl);
+				var navControl = new BMap.NavigationControl({
+					anchor: BMAP_ANCHOR_TOP_LEFT,
+					type: BMAP_NAVIGATION_CONTROL_LARGE
+				});
+				map.addControl(navControl);
+				var overviewControl = new BMap.OverviewMapControl({
+					anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+					isOpen: true
+				});
+				map.addControl(overviewControl);
+			}
+			var map;
+			initMap();
+		</script>
+	</body>
+
+</html>

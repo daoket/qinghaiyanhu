@@ -1,0 +1,24 @@
+/*旗下企业样式*/
+
+@import url("public/reset.css");
+@import url("public/header.css");
+@import url("public/footer.css");
+@import url("public/aside.css");
+.main {
+	height: 695px;
+}
+.main #map{
+	margin-top: 50px;
+}
+.main .article{
+	text-align: center;
+	height: 500px;
+}
+.main .article li a{
+	font-size: 18px;
+	color: #337FE5;
+	line-height: 50px;
+}
+.main .article li a:hover{
+	text-decoration: none;
+}

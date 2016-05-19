@@ -1,0 +1,56 @@
+/*新闻中心分页样式*/
+@import url("public/reset.css");
+@import url("public/header.css");
+@import url("public/footer.css");
+@import url("public/aside.css");
+.article {
+	margin-top: -50px;
+}
+.article .section{
+	width: 830px;
+	height: 110px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.article .section-left{
+	width: 80px;
+	height: 110px;
+	float: left;
+	background: #ddd;
+	text-align: center;
+	color: #fff;
+}
+.article .section-left i{
+	display: block;
+	font-size: 46px;
+	height: 80px;
+	line-height: 80px;
+	font-style: normal;
+	border-bottom: 1px solid #ccc;
+}
+.article .section-left span{
+	height: 30px;
+	line-height: 30px;
+}
+.article .section-right{
+	margin-top: 25px;
+	text-indent: 25px;
+}
+.article .section-right h2{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+.article .section-right p{
+	margin-top: 15px;
+	color: #999;
+}
+.article .section:hover{
+	border-color: #0F4B96;
+}
+.article .section:hover .section-left{
+	background: #0F4B96;
+}
+.article a{
+	text-decoration: none;
+}

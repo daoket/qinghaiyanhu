@@ -1,0 +1,28 @@
+/*产品中心分页样式*/
+
+@import url("public/reset.css");
+@import url("public/header.css");
+@import url("public/footer.css");
+@import url("public/aside.css");
+.article li{
+	float: left;
+	margin-bottom: 30px;
+}
+.article a{
+	display: block;
+	width: 268px;
+	height: 370px;
+	overflow: hidden;
+	border: 1px solid #ddd;
+	color: #666;
+	text-decoration: none;
+}
+.article a:hover{
+	border-color: #00408F;
+}
+.article h4{
+	margin: 12px 0 5px 10px;
+}
+.article span{
+	margin: 10px;
+}
